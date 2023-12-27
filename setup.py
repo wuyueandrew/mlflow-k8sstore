@@ -5,6 +5,8 @@ setup(
     name="mlflow-test-plugin",
     version="0.0.1",
     description="Test plugin for MLflow",
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
     packages=find_packages(),
     # Require MLflow as a dependency of the plugin, so that plugin users can simply install
     # the plugin & then immediately use it with MLflow
