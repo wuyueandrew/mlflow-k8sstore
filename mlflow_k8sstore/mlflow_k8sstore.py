@@ -1,9 +1,11 @@
+import logging
+
 from mlflow.store.model_registry.abstract_store import AbstractStore
 
 class K8sStore(AbstractStore):
 
     def create_registered_model(self, name, tags=None, description=None):
-        pass
+        logging.info(f"create_registered_model name: {name}, tags: {tags}, description: {description}")
 
     def update_registered_model(self, name, description):
         pass
